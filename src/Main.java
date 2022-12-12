@@ -1,8 +1,11 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -69,5 +72,17 @@ public class Main {
             }
             System.out.print(arbitrary[i] + ",");
         }
+    }public static void task4() {
+        System.out.println("Задача 4");
+        int[] integer = {1, 2, 3};
+        for (int i = 0; i < integer.length; i++) {
+            if (integer[i]%2 != 0) {
+                integer[i] = integer[i] + 1;
+            }
+
+
+        }
+        System.out.println(Arrays.toString(integer));
     }
+
 }
